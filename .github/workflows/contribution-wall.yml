@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "20 0 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/contribution-wall.yml"
+      - "scripts/generate-contribution-wall.mjs"
 
 permissions:
   contents: write
