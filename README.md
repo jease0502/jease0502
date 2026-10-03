@@ -10,7 +10,6 @@
   <a href="https://github.com/jease0502?tab=followers">
     <img src="https://img.shields.io/github/followers/jease0502?label=Followers&style=for-the-badge&logo=github&color=238636" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=jease0502&style=for-the-badge&color=238636&label=PROFILE+VIEWS" />
 </p>
 
 </div>
@@ -38,18 +37,18 @@ I work across the full robotics stack — from **actuators and real-time control
 
 ---
 
-# 🟩 Public Contribution Wall
+# 🟩 Contribution Wall
 
 <div align="center">
 
-### Public GitHub activity — blown up on purpose.
+### GitHub contribution activity — public + private counts.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/contribution-wall.svg">
   <img src="./assets/contribution-wall.svg" width="100%" alt="Jease GitHub contribution wall" />
 </picture>
 
-<sub>Automatically refreshed every day by GitHub Actions. Private repository activity is not reflected here.</sub>
+<sub>Generated daily from authenticated GitHub GraphQL. Private/internal contribution counts can be included without exposing private repository names or code.</sub>
 
 </div>
 
