@@ -38,18 +38,18 @@ I work across the full robotics stack — from **actuators and real-time control
 
 ---
 
-# 🟩 Contribution Wall
+# 🟩 Public Contribution Wall
 
 <div align="center">
 
-### My coding activity — blown up on purpose.
+### Public GitHub activity — blown up on purpose.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/contribution-wall.svg">
   <img src="./assets/contribution-wall.svg" width="100%" alt="Jease GitHub contribution wall" />
 </picture>
 
-<sub>Automatically refreshed every day by GitHub Actions.</sub>
+<sub>Automatically refreshed every day by GitHub Actions. Private repository activity is not reflected here.</sub>
 
 </div>
 
