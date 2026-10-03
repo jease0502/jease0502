@@ -41,7 +41,7 @@ I work across the full robotics stack — from **actuators and real-time control
 
 <div align="center">
 
-### GitHub contribution activity — public + private counts.
+### Full GitHub activity — authenticated public + private counts.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/contribution-wall.svg">
@@ -57,11 +57,8 @@ I work across the full robotics stack — from **actuators and real-time control
 ## 🐍 Contributions, but alive
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jease0502/jease0502/output/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jease0502/jease0502/output/github-snake.svg">
-    <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/jease0502/jease0502/output/github-snake.svg" width="100%" />
-  </picture>
+  <img src="./assets/private-snake.svg" width="100%" alt="Private-aware animated GitHub contribution snake" />
+  <sub>Generated from the same authenticated public + private contribution calendar.</sub>
 </div>
 
 ---
@@ -108,8 +105,9 @@ SIMULATION → REAL
 
 <div align="center">
 
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=jease0502&show_icons=true&hide_border=true&rank_icon=github&theme=github_dark&include_all_commits=true" />
-<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jease0502&layout=compact&hide_border=true&theme=github_dark&langs_count=8" />
+<img src="./assets/github-signal.svg" width="100%" alt="Private-aware authenticated GitHub metrics and top languages" />
+
+<sub>Stats and language mix are generated from authenticated GitHub GraphQL, including private owned repositories when the PAT has access.</sub>
 
 </div>
 
