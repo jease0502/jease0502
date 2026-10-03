@@ -278,7 +278,7 @@ ${legend}
 
 await fs.mkdir("assets", { recursive: true });
 await Promise.all([
-  fs.writeFile(path.join("assets","contribution-wall.svg"), wallSvg, "utf8"),
+  fs.writeFile(path.join("assets","private-contribution-wall.svg"), wallSvg, "utf8"),
   fs.writeFile(path.join("assets","private-snake.svg"), snakeSvg, "utf8"),
   fs.writeFile(path.join("assets","github-signal.svg"), statsSvg, "utf8"),
 ]);
