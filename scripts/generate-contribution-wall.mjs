@@ -195,7 +195,7 @@ ${monthLabels}${dayLabels}${cells}
 <g transform="translate(55 245)"><text class="metric">${total.toLocaleString("en-US")}</text><text y="21" class="label">CONTRIBUTIONS / 365D</text></g>
 <g transform="translate(315 245)"><text class="metric">${activeDays}</text><text y="21" class="label">ACTIVE DAYS</text></g>
 <g transform="translate(500 245)"><text class="metric">${peakDay}</text><text y="21" class="label">PEAK / DAY</text></g>
-<g transform="translate(650 245)"><text class="metric">${restricted.toLocaleString("en-US")}</text><text y="21" class="label">PRIVATE / RESTRICTED</text></g>
+<g transform="translate(650 245)"><text class="metric">${collection.totalCommitContributions.toLocaleString("en-US")}</text><text y="21" class="label">COMMITS / 365D</text></g>
 <g transform="translate(875 245)"><text class="metric" fill="#39d353">PRIVATE ON</text><text y="21" class="label">AUTHENTICATED GRAPHQL</text></g>
 </svg>`;
 
