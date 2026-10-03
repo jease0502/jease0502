@@ -1,4 +1,4 @@
-name: Refresh private contribution wall
+name: Refresh private profile metrics
 
 on:
   schedule:
@@ -9,13 +9,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: contribution-wall
+  group: private-profile-metrics
   cancel-in-progress: true
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     env:
       PROFILE_PAT: ${{ secrets.PROFILE_PAT }}
       PROFILE_OWNER: ${{ github.repository_owner }}
@@ -29,25 +29,25 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Verify PAT secret
+      - name: Verify authenticated PAT
         shell: bash
         run: |
           if [ -z "$PROFILE_PAT" ]; then
-            echo "::error::Missing Actions secret PROFILE_PAT. Create a classic PAT with only read:user scope and save it as PROFILE_PAT."
+            echo "::error::Missing PROFILE_PAT. For ALL private-aware widgets, use a classic PAT with repo + read:user and save it as the repository secret PROFILE_PAT."
             exit 1
           fi
 
-      - name: Generate authenticated contribution wall
+      - name: Generate private-aware profile assets
         run: node scripts/generate-contribution-wall.mjs
 
-      - name: Commit refreshed wall when changed
+      - name: Commit refreshed assets
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/contribution-wall.svg
+          git add assets/contribution-wall.svg assets/private-snake.svg assets/github-signal.svg
           if ! git diff --cached --quiet; then
-            git commit -m "chore: refresh private contribution wall"
+            git commit -m "chore: refresh private profile metrics"
             git pull --rebase origin master
             git push origin HEAD:master
           fi
